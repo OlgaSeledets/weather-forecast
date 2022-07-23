@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 const URL = "https://api.openweathermap.org/data/2.5/weather";
 const API_KEY = "39c13462afcea0dacb3084d61bb29812";

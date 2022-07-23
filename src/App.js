@@ -1,15 +1,15 @@
-import React, {useState} from "react";
-import Info from "./components/Info";
+import React from "react";
 import WheatherForecast from "./components/WheatherForecast";
 import "./App.css";
+import SearchWeather from "./components/SearchWeather";
 
 // class 
 
 function App() {
   return (
     <div className="App">
-      <Info />
-      <WheatherForecast />
+      <SearchWeather />
+      {/* <WheatherForecast /> */}
     </div>
   );
 }
