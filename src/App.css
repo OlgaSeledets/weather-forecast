@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    padding: 30px;
+}
+
+.writeCity {
+    outline: none;
+}
+
+.cards {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.card {
+    width: 180px;
+    height: 250px;
+    border: 1px solid black;
+}
