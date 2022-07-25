@@ -7,7 +7,6 @@
 
 .App {
     padding: 30px 30px 0px;
-    background: #1E1E1E;
 }
 
 .title {
@@ -49,4 +48,12 @@
 
 .btn-week {
     border-radius: 5px 5px 60px 5px;
+}
+
+.card {
+    width: 260px;
+    height: 350px;
+    background: #D4D4D4;
+    margin-top: 80px;
+    margin-left: 45px;
 }
