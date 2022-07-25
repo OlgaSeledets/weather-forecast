@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Button from './ButtonToday';
+import Button from './Button';
 import Card from "./Card";
 
 const URL = "https://api.openweathermap.org/data/2.5/weather";
