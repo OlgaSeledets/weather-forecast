@@ -57,3 +57,21 @@
     margin-top: 80px;
     margin-left: 45px;
 }
+
+.temperature {
+    font-size: 90px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.iconWeather {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+
+.Celsius {
+    font-size: 45px;
+    vertical-align: super;
+}
