@@ -8,8 +8,15 @@ const API_KEY = "39c13462afcea0dacb3084d61bb29812";
 const SearchWeather = () => {
     const [city, setCity] = useState();
     const [weather, setWeather] = useState();
+    const [visibility, setVisibility] = useState('none');
+    const [clickTodayBtn, setClickTodayBtn] = useState(true);
 
     const getWeather = (city) => {
+        const handleClick = () => {
+            if (clickTodayBtn === true) {
+                setVisibility('')
+            }
+        }
         return async () => { 
             const response = await fetch(
             `${URL}?q=${city}&appid=${API_KEY}&exclude=minutely,hourly,daily,alerts&units=metric`
@@ -18,6 +25,7 @@ const SearchWeather = () => {
             
             setWeather(data);
             console.log(data);
+            handleClick()
         }
     };
 
@@ -28,7 +36,7 @@ const SearchWeather = () => {
             <Button title='TODAY' style='btn' action={getWeather(city)} />
             <Button title='TOMORROW' style='btn' />
             <Button title='WEEK' style='btn btn-week' />
-            <Card weather={weather}/>
+            <Card weather={weather} visibility={visibility} />
         </div>
     );
 }

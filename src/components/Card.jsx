@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Card = ({weather}) => {
+const Card = ({weather, visibility}) => {
     return (
-        <div className='card'>
+        <div className='card' style={{display: visibility}}>
            <div className='temperature'>
                 {weather?.main?.temp ? Math.ceil(weather.main.temp) : ''}<span className='Celsius'>°C</span>
            </div>
