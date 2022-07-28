@@ -15,6 +15,11 @@ const SearchWeather = () => {
         const handleClick = () => {
             if (clickTodayBtn === true) {
                 setVisibility('')
+                setClickTodayBtn(false)
+            }
+            else {
+                setVisibility('none')
+                setClickTodayBtn(true)
             }
         }
         return async () => { 
